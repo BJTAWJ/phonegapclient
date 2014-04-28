@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemple Geolocation</title>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>    
+	<script src="http://jsconsole.com/remote.js?2106213E-6D22-47A6-8416-30E56959EFF4"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Phonegap Application</title>
+    <link rel="stylesheet" media="all" title="style de la page" href="afficher_cacher_div.css" />
+    <link rel="stylesheet" media="all" title="style de la page" href="bouton.css" />	
+    <script type="text/javascript" src="afficher_cacher_div.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+  </head>
+  <body>
+	<h2>Accéléromètre</h2>
+	<button class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">on/off</button>
+    <div id="texte" class="texte">
+    <p id="geolocation">Finding geolocation...</p> 
+	<div id="valeurX"> Valeur de X</div>
+    <div id="valeurY"> Valeur de Y</div>
+    <div id="valeurZ"> Valeur de Z</div>  
+    <script type="text/javascript">
+    //<!--
+        afficher_cacher('texte');
+    //-->
+    </script>
+	</div>	
+	
+	
+	<!-- <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+	</div> -->
+	
+	<p id="pDebug"/>
+  </body>
+</html>
